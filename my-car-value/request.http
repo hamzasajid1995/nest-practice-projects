@@ -1,0 +1,47 @@
+### whoami
+GET http://localhost:3100/auth/whoami
+
+
+### signout
+POST http://localhost:3100/auth/signout
+
+
+### signup
+POST http://localhost:3100/auth/signup
+Content-Type: application/json
+
+{
+    "email": "h2@h.com",
+    "password": "1000"
+}
+
+
+### signin
+POST http://localhost:3100/auth/signin
+Content-Type: application/json
+
+{
+    "email": "h2@h.com",
+    "password": "1000"
+}
+
+
+### Get user
+GET  http://localhost:3100/auth/5
+
+
+### Get users
+GET  http://localhost:3100/auth?email=h@hh.com
+
+
+### Delete user
+DELETE http://localhost:3100/auth/5
+
+
+### Update user
+PATCH http://localhost:3100/auth/2
+Content-Type: application/json
+
+{
+    "email": "h@hh.com"
+}

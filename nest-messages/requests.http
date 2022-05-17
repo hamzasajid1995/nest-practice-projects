@@ -1,0 +1,15 @@
+### list messages
+
+GET http://localhost:3100/messages
+
+### get message
+GET http://localhost:3100/messages/499
+
+
+### create message
+POST http://localhost:3100/messages
+content-type: application/json
+
+{
+    "content": "hi"
+}
